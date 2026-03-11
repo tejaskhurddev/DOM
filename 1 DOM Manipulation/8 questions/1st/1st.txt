@@ -1,0 +1,1 @@
+Q - Select all <li> element and print their text using a loop
