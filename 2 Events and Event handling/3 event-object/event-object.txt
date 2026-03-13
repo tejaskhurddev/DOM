@@ -1,0 +1,33 @@
+1. event.target
+
+Definition:
+event.target is a property of the Event object that refers to the element on which the event originally occurred.
+kis element pe event hua hai
+
+----------------------------------------
+
+
+2. event.type
+
+Definition:
+event.type is a property of the Event object that returns the type of event that occurred.
+konsa event hua hai
+
+
+It tells you what kind of event triggered the event handler, such as:
+click, submit, keydown, mouseover
+
+----------------------------------------
+
+
+3. event.preventDefault()
+
+Definition:
+event.preventDefault() is a method of the Event object used to cancel the default behavior of an element.
+
+Example: 
+When a form is submitted, the page reloads.
+Using preventDefault() stops that reload.
+
+
+----------------------------------------
