@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>event-bubbling</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    padding: 15px 30px;
+    background-color: #0077cc; 
+    color: white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ffdd57; 
+  }
+
+  .header-button {
+    padding: 8px 16px;
+    background-color: #ffdd57;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .header-button:hover {
+    background-color: #e6c84f;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;          
+    gap: 15px;             
+  }
+
+  li {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background-color: #02497b;
+  }
+
+  .line-through {
+    text-decoration: line-through;
+  }
+
+  .btn {
+    background-color: #b5d9f3;
+    padding: 0.7rem 1.5rem;
+    color: black;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .c {
+    background-color: #e6c84f;
+    width: 200px;
+    height: 200px;
+  }
+
+  .b {
+    background-color: cadetblue;
+    width: 400px;
+    height: 400px;
+  }
+
+  .a {
+    background-color: rgb(194, 100, 237);
+    width: 600px;
+    height: 500px;
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <button class="header-button">Contact</button>
+    </nav>
+
+    <!-- agar mai nav pe click krunga toh event chalega pr agar button pe click krunga tabhi bhi event chalega due to event bubbling -->
+  </header>
+
+  <main>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+
+    
+    <div class="a">
+      <div class="b">
+        <div class="c">
+          <button class="btn">Click</button>
+        </div>
+      </div>
+    </div>
+   
+
+  </main>
+
+
+
+  <script src="./event-bubbling.js"></script>
+</body>
+</html>
