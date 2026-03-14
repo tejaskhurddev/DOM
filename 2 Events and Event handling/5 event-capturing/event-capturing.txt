@@ -1,0 +1,16 @@
+Event capturing is opposite of event bubbling
+
+
+Whenever you click or raise an event, your event flow/Propagation goes through two phases:
+
+Phase 1 (capture Phase): The event will move from the top level element to the bottom
+Phase 2 (bubbling Phase): The event will go from the raised element to the parent and it is by default on
+
+Phase 1 always comes first but it is off by default, we we turn it on 
+
+very imp note: true likhkr ham phase 1 on krte hai lekin woh event phase 2 mai fir nahi chalega
+Important point: If you explicitly set the listener for capturing phase (true), that handler will only run during capturing, not during bubbling. It doesn’t automatically get called again in the bubbling phase.
+
+
+you can have the same element respond in both phases, but you need two separate listeners—one for capturing and one for bubbling. There’s no single flag to make a capturing listener also fire during bubbling.
+(see eg 3 in code)

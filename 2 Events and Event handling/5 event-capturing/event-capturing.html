@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>event-capturing</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  main {
+    margin: 5px;
+  }
+
+  .btn {
+    background-color: #b5d9f3;
+    padding: 0.7rem 1.5rem;
+    color: black;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .c {
+    background-color: #e6c84f;
+    width: 200px;
+    height: 200px;
+  }
+
+  .b {
+    background-color: cadetblue;
+    width: 400px;
+    height: 400px;
+  }
+
+  .a {
+    background-color: rgb(194, 100, 237);
+    width: 600px;
+    height: 500px;
+    margin: 15px;
+  }
+
+</style>
+</head>
+<body>
+  <main>
+    <div class="a">
+      <div class="b">
+        <div class="c">
+          <button class="btn">Click</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="a d">
+      <div class="b e">
+        <div class="c f">
+          <button class="btn">Click</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="a g">
+      <div class="b h">
+        <div class="c i">
+          <button class="btn">Click</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./event-capturing.js"></script>
+</body>
+</html>
