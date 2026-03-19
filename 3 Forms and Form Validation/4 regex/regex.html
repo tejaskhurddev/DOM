@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regex</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #222;
+            padding: 20px 30px;
+            border-radius: 8px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        input[type="submit"] {
+            background-color: #555;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.25s ease-in-out ;
+            width: fit-content;
+            padding: 8px 16px; 
+            margin: 0 auto 15px; 
+            /* margin: top (left and right) bottom */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #777;
+        }
+
+        .small {
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="email" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <script src="./regex.js"></script>
+</body>
+</html>
